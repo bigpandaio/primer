@@ -1,0 +1,31 @@
+{
+  "name": "primer",
+  "version": "0.0.1",
+  "description": "WebSockets application server inspired by express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bigpandaio/primer.git"
+  },
+  "keywords": [
+    "websockets",
+    "server",
+    "application"
+  ],
+  "author": "Shahar Kedar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bigpandaio/primer/issues"
+  },
+  "dependencies": {
+    "primus": "~2.0.2",
+    "eventemitter3": "~0.1.1",
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "engine.io": "~0.9.0"
+  }
+}
