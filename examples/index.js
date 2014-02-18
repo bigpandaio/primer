@@ -9,6 +9,10 @@ app.configure(function() {
   app.set('generate', __dirname +'/../examples/primus.js');
 })
 
+app.react('echo', function(data, proxy, context) {
+  proxy.send('echo', data, context);
+})
+
 var port = app.get('port') || 4000;
 server.listen(port, function() {
   console.log(util.format('listening on port %s', port))

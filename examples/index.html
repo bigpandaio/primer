@@ -4,7 +4,11 @@
     <script src="primus.js"></script>
     <script>
         var primus = new Primus('http://localhost:4000/', { ping: 1000});
-        primus.write({event: "test", message: "bla"})
+        primus.on('data', function(data) {
+            console.log(data);
+        })
+        primus.write({event: "echo", message: "bla"})
+
     </script>
 </head>
 <body>
